@@ -12,7 +12,6 @@ import { deleteTarget } from "../../features/authSlice";
 import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
 import Circle from "../../components/Circle";
-import { deleteTarget } from "../../features/authSlice";
 import Chat from "../../components/Chat";
 
 const List = () => {
