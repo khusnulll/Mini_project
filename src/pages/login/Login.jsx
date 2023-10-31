@@ -4,9 +4,7 @@ import { useFormik, validateYupSchema } from "formik";
 import * as yup from "yup";
 import Cookies from "js-cookie";
 import { useDispatch } from "react-redux";
-import { setUser } from "../../features/authSlice";
 
-import Layout from "../../components/Layout";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 
