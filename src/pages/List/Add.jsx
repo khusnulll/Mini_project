@@ -88,8 +88,6 @@ const Add = () => {
       setPrice("");
       setIsTargetReached(false);
     }
-
-    navigate(`/shopwise/list`);
   };
 
   return (

@@ -13,6 +13,7 @@ import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
 import Circle from "../../components/Circle";
 import Chat from "../../components/Chat";
+import Footer from "../../components/Footer";
 
 const List = () => {
   const navigate = useNavigate();
@@ -109,7 +110,7 @@ const List = () => {
   const totalSelesai = done.reduce((total, item) => total + parseFloat(item.price), 0);
 
   return (
-    <section className="w-screen mb-52">
+    <section className="w-screen">
       <Navbar username={username} />
       <Layout>
         {target ? (
@@ -186,9 +187,10 @@ const List = () => {
         {/* <div>
           <Chart />
         </div> */}
-        <div className="my-20">
+        <div className="mt-20 mb-10">
           <Chat />
         </div>
+        <Footer />
       </Layout>
     </section>
   );

@@ -7,8 +7,8 @@ const Delete = () => {
   const dispatch = useDispatch();
 
   const handleDeleteTarget = () => {
-    dispatch(deleteTarget()); // Lakukan penghapusan target
-    navigate("/shopwise/list"); // Redirect ke halaman yang sesuai
+    dispatch(deleteTarget());
+    navigate("/shopwise/list");
   };
   return (
     <div>
