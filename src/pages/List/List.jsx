@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useSelector, useDispatch } from "react-redux";
+import { deleteTarget } from "../../features/authSlice";
 
 import Navbar from "../../components/Navbar";
 import Button from "../../components/Button";
