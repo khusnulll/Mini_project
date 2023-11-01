@@ -4,6 +4,7 @@ import { useFormik, validateYupSchema } from "formik";
 import * as yup from "yup";
 import Cookies from "js-cookie";
 import { useDispatch } from "react-redux";
+import { setUser } from "../../features/authSLice";
 
 import Input from "../../components/Input";
 import Button from "../../components/Button";
@@ -21,8 +22,8 @@ const Login = () => {
 
   const formik = useFormik({
     initialValues: {
-      username: "",
-      password: "",
+      username: "Imah",
+      password: "Imah123",
     },
 
     validationSchema: userCredentials,

@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
-import { setTarget } from "../../features/authSlice";
+import { setTarget } from "../../features/authSLice";
 
 import Button from "../../components/Button";
 import Input from "../../components/Input";
-import Layout from "../../components/Layout";
 
 const AddTarget = () => {
   const navigate = useNavigate();
