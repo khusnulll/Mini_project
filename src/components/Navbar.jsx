@@ -10,7 +10,7 @@ const Navbar = ({ username }) => {
     <nav className="w-screen overflow-hidden z-10 bg-white fixed shadow-sm ">
       <div className="mx-24 flex justify-between items-center px-4 py-4">
         <div className="flex gap-x-4 text-[#0E0E44]">
-          <img src="./src/components/LOGO.png" width={150} className="cursor-pointer" onClick={() => navigate("/")} />
+          <img src="./src/assets/LOGO.png" width={150} className="cursor-pointer" onClick={() => navigate("/")} />
         </div>
         <div>
           {username ? (
