@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 ">
-          <img src="../../src/assets/header.png" width={500} />
+          <img src="https://storyset.com/illustration/mobile-note-list/cuate#3362CCFF&hide=&hide=complete" width={500} />
         </div>
       </div>
 
