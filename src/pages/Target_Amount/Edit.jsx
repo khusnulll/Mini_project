@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setTarget } from "../../features/authSlice";
+import { setTarget } from "../../features/authSLice.js";
 
 import Input from "../../components/Input";
 import Button from "../../components/Button";
