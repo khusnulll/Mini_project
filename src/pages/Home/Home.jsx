@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 ">
-          <img src="../assets/header.png" width={500} />
+          <img src="../../src/assets/header.png" width={500} />
         </div>
       </div>
 
