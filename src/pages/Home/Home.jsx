@@ -14,20 +14,20 @@ const Home = () => {
   console.log(username);
 
   return (
-    <section className="">
+    <section className=":w-screen h-fit">
       <Navbar username={username} />
 
       {/* Header */}
-      <div className="flex flex-wrap flex-row-reverse justify-center items-center px-24 h-screen">
-        <div className="grid grid-col gap-y-5 w-1/2">
-          <h1 className="font-bold text-5xl text-[#0E0E44]">We Help You Make Wise Shopping Decisions.</h1>
+      <div className="md:flex sm:px-8 h-fit w-screen flex flex-col justify-center items-center">
+        <div className="sm:w-full grid grid-col gap-y-5 w-1/2">
+          <h1 className="font-bold text-5xl text-[#0E0E44] sm:mt-32">We Help You Make Wise Shopping Decisions.</h1>
           <p className="text-[#999]">"Spend your money wisely, only buy what you need, and save the rest for greater rewards."</p>
           <div>
             <Button id="btn-start" label="Let's kickstart the list" onClick={() => navigate("/shopwise/list")} />
           </div>
         </div>
-        <div className="w-1/2 ">
-          <img src="./src/assets/Header.png" width={500} />
+        <div className="w-1/2 sm:w-full">
+          <img src="./src/assets/Header.png" className="md:w-full" width={500} />
         </div>
       </div>
 

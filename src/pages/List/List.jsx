@@ -112,16 +112,17 @@ const List = () => {
   return (
     <section className="w-screen">
       <Navbar username={username} />
-      <Layout>
+
+      <div className="w-screen flex flex-col justify-center items-center">
         {target ? (
-          <div className="flex gap-x-5 items-center w-full px-32 mt-32 mb-8">
+          <div className="flex gap-x-5 items-center w-full px-4  mt-32 mb-8">
             <h3 className="font-semibold text-2xl">Target Amount</h3>
             <div className="font-semibold text-2xl px-5">Rp. {target}</div>
             <PencilIcon className="w-8 cursor-pointer" onClick={() => navigate("/shopwise/list/edit/:targetId")} />
             <TrashIcon className="w-8 cursor-pointer" onClick={handleDeleteTarget} />
           </div>
         ) : (
-          <div className="flex gap-x-5 items-center w-full px-32 mt-32 mb-8">
+          <div className="mt-32 sm:text-xl flex items-center gap-x-4 px-4 w-full md:px-32 sm:px-16 mb-8">
             <h3 className="font-semibold text-2xl">Increase the spending target amount</h3>
             <PlusIcon className="w-6 h-6 border border-[#0E0E44] rounded-md cursor-pointer" onClick={() => navigate("/shopwise/list/Add_target_amount")} />
           </div>
@@ -191,7 +192,7 @@ const List = () => {
           <Chat />
         </div>
         <Footer />
-      </Layout>
+      </div>
     </section>
   );
 };

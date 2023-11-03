@@ -30,7 +30,7 @@ const Chat = () => {
 
   return (
     <section className="w-screen h-screen flex justify-center items-center">
-      <div className="w-1/2 flex flex-col gap-y-5">
+      <div className="sm:w-3/4 md:w-1/2 lg:w-1/2 flex flex-col gap-y-5">
         <h1 className="text-center font-semibold text-3xl">Chatbox</h1>
         <div className="flex gap-x-2">
           <Input id="openai" placeholder="type your input here..." value={prompt} onChange={(e) => setPrompt(e.target.value)} />
