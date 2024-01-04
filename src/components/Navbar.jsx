@@ -7,10 +7,10 @@ import Button from "./Button";
 const Navbar = ({ username }) => {
   const navigate = useNavigate();
   return (
-    <nav className="w-screen overflow-hidden z-10 bg-white fixed shadow-sm ">
-      <div className="mx-24 flex justify-between items-center px-4 py-4">
+    <nav className="w-screen overflow-hidden z-10 bg-white fixed shadow-sm">
+      <div className="md:mx-24 sm:mx-8 flex justify-between items-center px-4 py-4">
         <div className="flex gap-x-4 text-[#0E0E44]">
-          <img src="./src/assets/LOGO.png" width={150} className="cursor-pointer" onClick={() => navigate("/")} />
+          <img src="../../src/assets/LOGO.png" width={150} className="cursor-pointer" onClick={() => navigate("/")} />
         </div>
         <div>
           {username ? (

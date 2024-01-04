@@ -18,16 +18,16 @@ const Home = () => {
       <Navbar username={username} />
 
       {/* Header */}
-      <div className="md:flex sm:px-8 h-fit w-screen flex flex-col justify-center items-center">
-        <div className="sm:w-full grid grid-col gap-y-5 w-1/2">
+      <div className="sm:px-8 md:h-screen h-fit w-full flex flex-row-reverse md:justify-between md:px-24 items-center">
+        <div className="sm:w-full md:w-1/2 grid grid-col gap-y-5 ">
           <h1 className="font-bold text-5xl text-[#0E0E44] sm:mt-32">We Help You Make Wise Shopping Decisions.</h1>
           <p className="text-[#999]">"Spend your money wisely, only buy what you need, and save the rest for greater rewards."</p>
           <div>
             <Button id="btn-start" label="Let's kickstart the list" onClick={() => navigate("/shopwise/list")} />
           </div>
         </div>
-        <div className="w-1/2 sm:w-full">
-          <img src="./src/assets/Header.png" className="md:w-full" width={500} />
+        <div className="md:w-1/2 sm:w-full">
+          <img src="./src/assets/Header.png" className=" md:w-[500px]" />
         </div>
       </div>
 

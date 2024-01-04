@@ -115,7 +115,7 @@ const List = () => {
 
       <div className="w-screen flex flex-col justify-center items-center">
         {target ? (
-          <div className="flex gap-x-5 items-center w-full px-4  mt-32 mb-8">
+          <div className="flex sm:flex-wrap gap-x-5 items-center w-full px-4  mt-32 mb-8">
             <h3 className="font-semibold text-2xl">Target Amount</h3>
             <div className="font-semibold text-2xl px-5">Rp. {target}</div>
             <PencilIcon className="w-8 cursor-pointer" onClick={() => navigate("/shopwise/list/edit/:targetId")} />
@@ -142,8 +142,8 @@ const List = () => {
                       <Circle onClick={() => handleCircleClick(item.id)} />
                     </td>
                     <td className="p-2">{item?.name}</td>
-                    <td>{item?.date}</td>
-                    <td>{item?.category}</td>
+                    <td className="sm:hidden">{item?.date}</td>
+                    <td className="sm:hidden">{item?.category}</td>
                     <td>Rp. {item?.price}</td>
                     <td>
                       <PencilIcon className="w-6 cursor-pointer" onClick={() => handleUpdateList(item.id)} />
@@ -169,10 +169,10 @@ const List = () => {
               {done.length > 0 ? (
                 done.map((item, index) => (
                   <tr key={index} className="p-2">
-                    <td>{item.id}</td>
+                    <td>{index + 1}</td>
                     <td className="p-2">{item?.name}</td>
-                    <td>{item?.date}</td>
-                    <td>{item?.category}</td>
+                    <td className="sm:hidden">{item?.date}</td>
+                    <td className="sm:hidden">{item?.category}</td>
                     <td>Rp. {item?.price}</td>
                   </tr>
                 ))

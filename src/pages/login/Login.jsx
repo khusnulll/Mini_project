@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <section className="w-screen h-screen">
       <div className="flex flex-wrap justify-between items-center bg-[#EEF5FB] w-full h-full px-40">
-        <img src="../../src/assets/illustrasi.png" alt="" width={500} />
+        <img src="../../src/assets/Illustrasi.png" alt="" width={500} />
         <div className="p-14 bg-white  rounded-lg flex flex-col">
           <div className="text-center flex flex-col gap-y-2">
             <h1 className="font-semibold text-4xl ">Welcome Back</h1>
